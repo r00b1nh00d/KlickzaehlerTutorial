@@ -2,7 +2,7 @@
 
 ## ~avatar avatar @unplugged
 Weihnachtsplätzchen, Lichter an der Lichterkette, Kugeln oder Figuren am Weihnachtsbaum, weißt du eigentlich wie viel du davon hast? <br>
-Um solche sachen einfach zu zählen ohne sich zu verzählen verwendet man oft einen sogenannten "Handzähler". <br>
+Um solche sachen einfach zu zählen ohne sich zu verzählen verwendet man oft einen sogenannten !["Handzähler"](https://www.google.com/search?q=handz%C3%A4hler&rlz=1C1CHBD_deDE928DE928&oq=handz%C3%A4hler&aqs=chrome..69i57j0l5j69i60j69i61.3920j1j7&sourceid=chrome&ie=UTF-8). <br>
 Du kennst diesen kleinen Helfer vielleicht von Einlasskontrollen bei größeren Veranstaltungen.
 
 ## ~ @unplugged
