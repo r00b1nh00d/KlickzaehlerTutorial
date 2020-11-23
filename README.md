@@ -34,7 +34,7 @@ Um uns jetzt die gspeicherte Zahl wieder anzeigen zu lassen nehmen wir den Block
 
 ```blocks
 let Zähler = 0
-
+Zähler = 0
 
 basic.forever(function () {
     basic.showNumber(Zähler)
@@ -46,7 +46,7 @@ Da in dem Block "ändere um 1" steht erhöht sich unsere Variable um eins bei je
 
 ```blocks
 let Zähler = 0
-
+Zähler = 0
 
 basic.forever(function () {
     basic.showNumber(Zähler)
@@ -68,7 +68,7 @@ input.onButtonPressed(Button.AB, function () {
     Zähler = 0
 })
 let Zähler = 0
-
+Zähler = 0
 basic.forever(function () {
     basic.showNumber(Zähler)
     basic.pause(250)
@@ -82,8 +82,6 @@ basic.forever(function () {
 })
 ```
 
-
-> Diese Seite bei [https://r00b1nh00d.github.io/klickzaehlertutorial/](https://r00b1nh00d.github.io/klickzaehlertutorial/) öffnen
 
 ## Als Tutorial verwenden
 
