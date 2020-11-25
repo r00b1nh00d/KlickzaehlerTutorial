@@ -7,6 +7,7 @@ Du kennst diesen kleinen Helfer vielleicht von Einlasskontrollen bei größeren 
 
 ## ~ @unplugged
 Falls du sowas nicht zu hause hast, kein Problem. Dein Calliope mini kann das auch!!!
+![Zaehler](https://github.com/r00b1nh00d/KlickzaehlerTutorial/blob/master/Zaehler.gif?raw=true)
 
 
 ## Schritt 1
