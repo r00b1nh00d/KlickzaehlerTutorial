@@ -1,19 +1,20 @@
 # Einfach Zählen
 
 ## ~avatar avatar @unplugged
-Weihnachtsplätzchen, Lichter an der Lichterkette, Kugeln oder Figuren am Weihnachtsbaum, weißt du eigentlich wie viel du davon hast? <br>
-Um solche sachen einfach zu zählen ohne sich zu verzählen verwendet man oft einen sogenannten ["Handzähler"](https://www.google.com/search?q=handz%C3%A4hler&rlz=1C1CHBD_deDE928DE928&oq=handz%C3%A4hler&aqs=chrome..69i57j0l5j69i60j69i61.3920j1j7&sourceid=chrome&ie=UTF-8). <br>
+Weihnachtsplätzchen, Lichter an der Lichterkette, Kugeln oder Figuren am Weihnachtsbaum: <br>
+weißt du eigentlich, wie viel du davon hast? <br>
+Um solche Sachen einfach zu zählen, ohne sich zu verzählen, verwendet man oft einen sogenannten ["Handzähler"](https://www.google.com/search?q=handz%C3%A4hler&rlz=1C1CHBD_deDE928DE928&oq=handz%C3%A4hler&aqs=chrome..69i57j0l5j69i60j69i61.3920j1j7&sourceid=chrome&ie=UTF-8). <br>
 Du kennst diesen kleinen Helfer vielleicht von Einlasskontrollen bei größeren Veranstaltungen.
 
 ## ~ @unplugged
-Falls du sowas nicht zu hause hast, kein Problem. Dein Calliope mini kann das auch!!!
+Falls du sowas nicht zuhause hast, kein Problem. Dein Calliope mini kann das auch!!!
 ![Zaehler](https://github.com/r00b1nh00d/KlickzaehlerTutorial/blob/master/Zaehler.gif?raw=true)
 
 
 ## Schritt 1
-Um so einen Handzähler oder auch Klickzähler genannt zu programmieren nehmen wir erstmal aus dem Bereich ``||basic:Grundlagen ||`` den Block ``||basic: zeige Zahl||``. <br>
-Dieser wird in den Block ``||basic:dauerhaft||`` geschoben. Im Simulator wird dir nun die Zahl angezeigt, welche im Block ``||basic: zeige Zahl||`` steht angezeigt. <br>
-Jetzt möchtest du zum Zählen nicht immer eine neue Zahl in den Block einprogrammieren sondern das, was im Angezeigt werden soll mit den Knöpfen verändern können. Dazu mehr im nächsten Schritt.
+Um so einen Handzähler oder auch Klickzähler genannt zu programmieren, nehmen wir erstmal aus dem Bereich ``||basic:Grundlagen ||`` den Block ``||basic: zeige Zahl||``. <br>
+Dieser wird in den Block ``||basic:dauerhaft||`` geschoben. Im Simulator wird dir nun die Zahl angezeigt, welche im Block ``||basic: zeige Zahl||`` steht. <br>
+Jetzt möchtest du zum Zählen nicht immer eine neue Zahl in den Block einprogrammieren, sondern die Zahl mit den Knöpfen verändern können. Dazu erfährst du mehr im nächsten Schritt.
 
 ```blocks
 basic.forever(function () {
@@ -22,16 +23,16 @@ basic.forever(function () {
 ```
 
 ## Schritt 2 ~@unplugged
-Um die angezeigte Zahl mit den Knöpfen A und B am Calliope verändern zu können dürfen wir sie nicht direkt in den Block ``||basic: zeige Zahl||`` programmieren, sondern müssen sie auf einer Variable speichern. <br>
+Um die angezeigte Zahl mit den Knöpfen A und B am Calliope verändern zu können, dürfen wir sie nicht direkt in den Block ``||basic: zeige Zahl||`` programmieren, sondern müssen sie auf einer Variable speichern. <br>
 
-Eine Variable kannst du dir vorstellen wie ein Behälter oder Gefäß. In den du verschiedene Dinge zum aufbewahren bzw. speichern hinein legen kannst. <br>
+Eine Variable kannst du dir vorstellen wie ein Behälter oder Gefäß, in den du verschiedene Dinge zum Aufbewahren bzw. Speichern hineinlegen kannst. <br>
 In unserem Fall wären dies Zahlen, Buchstaben, Wörter oder Listen.
 
 ## Schritt 3
-Erstellen wir also eine Variable namens ``||Variables:Zähler||`` indem du auf den Bereich ``||Variables:Variablen||`` klickst. <br>
-Nachdem erstellen erscheinen nun die Bläcke ``||Variables:setze auf ||`` und ``||Variables:ändere um ||``. <br>
+Erstellen wir also eine Variable namens ``||Variables:Zähler||``, indem du auf den Bereich ``||Variables:Variablen||`` klickst. <br>
+Nach dem Erstellen erscheinen nun die Blöcke ``||Variables:setze auf ||`` und ``||Variables:ändere um ||``. <br>
 Den Block ``||Variables:setze auf ||`` schieben wir in den Block ``||basic:beim Start||``. So wird der Variable beim Start des Calliope ein bestimmter Wert (in diesem Fall "0") zugewiesen. <br>
-Um uns jetzt die gspeicherte Zahl wieder anzeigen zu lassen nehmen wir den Block ``||Variables:Zähler||`` und schieben ihn in den Block ``||basic: zeige Zahl||``. <br>
+Um uns jetzt die gespeicherte Zahl wieder anzeigen zu lassen, nehmen wir den Block ``||Variables:Zähler||`` und schieben ihn in den Block ``||basic: zeige Zahl||``. <br>
 
 ```blocks
 let Zähler = 0
@@ -42,8 +43,8 @@ basic.forever(function () {
 })
 ```
 ## Schritt 4
-Die Variable können wir ganz leicht mit einem Knopfdruck ändern indem wir den Block ``||input:wenn Knopf A gedrückt||`` aus dem Bereich ``||input:Eingaben||`` nehmen und uns hier den Block ``||Variables:ändere um 1 ||`` hineinschieben. <br>
-Da in dem Block "ändere um 1" steht erhöht sich unsere Variable um eins bei jedem drücken des Knopfs.
+Die Variable können wir ganz leicht mit einem Knopfdruck ändern, indem wir den Block ``||input:wenn Knopf A gedrückt||`` aus dem Bereich ``||input:Eingaben||`` nehmen und uns hier den Block ``||Variables:ändere um 1 ||`` hineinschieben. <br>
+Da in dem Block "ändere um 1" steht, erhöht sich unsere Variable um eins bei jedem Drücken des Knopfes.
 
 ```blocks
 let Zähler = 0
@@ -59,7 +60,7 @@ input.onButtonPressed(Button.A, function () {
 
 ```
 ## Schritt 5
-Um den Zähler auch wieder zurücksetzen zu können kann man beispielsweise die Tasten A und B gleichzeitig drücken, wenn hier in den Block ``||input:wenn Knopf A+B gedrückt||`` 
+Um den Zähler auch wieder zurücksetzen zu können, kann man beispielsweise die Tasten A und B gleichzeitig drücken, wenn hier in den Block ``||input:wenn Knopf A+B gedrückt||`` 
 der Block ``||Variables:setze auf 0 ||`` geschoben wird.
 ```blocks
 input.onButtonPressed(Button.A, function () {
@@ -84,13 +85,3 @@ basic.forever(function () {
 ```
 
 
-## Als Tutorial verwenden
-
-Dieses Repository kann als **Tutorial** für MakeCode verwenden.
-
-öffne dazu den Link: [https://makecode.calliope.cc/#tutorial:https://github.com/r00b1nh00d/KlickzaehlerTutorial]
-
-#### Metadaten (verwendet für Suche, Rendering)
-
-* for PXT/calliopemini
-<script src="https://makecode.com/gh-pages-embed.js"></script><script>makeCodeRender("{{ site.makecode.home_url }}", "{{ site.github.owner_name }}/{{ site.github.repository_name }}");</script>
