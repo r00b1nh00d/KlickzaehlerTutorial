@@ -84,4 +84,6 @@ basic.forever(function () {
 })
 ```
 
-
+## ~ @unplugged
+Ganz ähnlich zum Klickzähler kannst du dir auch ein Schild Programmieren, welches "nicht stören" oder "Open" bzw. "Close" anzeigt. <br>
+Ein Video dazu findest du auch hier: [Open/Close-Schild](https://www.youtube.com/watch?v=Jlv2vZMC6w8)
